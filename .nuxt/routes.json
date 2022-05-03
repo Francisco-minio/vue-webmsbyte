@@ -1,0 +1,72 @@
+[
+  {
+    "name": "blank-page___en",
+    "path": "/blank-page",
+    "component": "C:\\\\Users\\\\Francisco\\\\Desktop\\\\VUE\\\\veluxi\\\\veluxi_v217\\\\veluxi\\\\packages\\\\saas-theme\\\\pages\\\\blank-page.vue",
+    "chunkName": "pages/blank-page",
+    "_name": "_0b6c1432"
+  },
+  {
+    "name": "contact___en",
+    "path": "/contact",
+    "component": "C:\\\\Users\\\\Francisco\\\\Desktop\\\\VUE\\\\veluxi\\\\veluxi_v217\\\\veluxi\\\\packages\\\\saas-theme\\\\pages\\\\contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_8a2fd474"
+  },
+  {
+    "name": "index___Es",
+    "path": "/Es",
+    "component": "C:\\\\Users\\\\Francisco\\\\Desktop\\\\VUE\\\\veluxi\\\\veluxi_v217\\\\veluxi\\\\packages\\\\saas-theme\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_d64a4610"
+  },
+  {
+    "name": "login___en",
+    "path": "/login",
+    "component": "C:\\\\Users\\\\Francisco\\\\Desktop\\\\VUE\\\\veluxi\\\\veluxi_v217\\\\veluxi\\\\packages\\\\saas-theme\\\\pages\\\\login.vue",
+    "chunkName": "pages/login",
+    "_name": "_5e82800f"
+  },
+  {
+    "name": "register___en",
+    "path": "/register",
+    "component": "C:\\\\Users\\\\Francisco\\\\Desktop\\\\VUE\\\\veluxi\\\\veluxi_v217\\\\veluxi\\\\packages\\\\saas-theme\\\\pages\\\\register.vue",
+    "chunkName": "pages/register",
+    "_name": "_1a752b26"
+  },
+  {
+    "name": "blank-page___Es",
+    "path": "/Es/blank-page",
+    "component": "C:\\\\Users\\\\Francisco\\\\Desktop\\\\VUE\\\\veluxi\\\\veluxi_v217\\\\veluxi\\\\packages\\\\saas-theme\\\\pages\\\\blank-page.vue",
+    "chunkName": "pages/blank-page",
+    "_name": "_0b6c1432"
+  },
+  {
+    "name": "contact___Es",
+    "path": "/Es/contact",
+    "component": "C:\\\\Users\\\\Francisco\\\\Desktop\\\\VUE\\\\veluxi\\\\veluxi_v217\\\\veluxi\\\\packages\\\\saas-theme\\\\pages\\\\contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_8a2fd474"
+  },
+  {
+    "name": "login___Es",
+    "path": "/Es/login",
+    "component": "C:\\\\Users\\\\Francisco\\\\Desktop\\\\VUE\\\\veluxi\\\\veluxi_v217\\\\veluxi\\\\packages\\\\saas-theme\\\\pages\\\\login.vue",
+    "chunkName": "pages/login",
+    "_name": "_5e82800f"
+  },
+  {
+    "name": "register___Es",
+    "path": "/Es/register",
+    "component": "C:\\\\Users\\\\Francisco\\\\Desktop\\\\VUE\\\\veluxi\\\\veluxi_v217\\\\veluxi\\\\packages\\\\saas-theme\\\\pages\\\\register.vue",
+    "chunkName": "pages/register",
+    "_name": "_1a752b26"
+  },
+  {
+    "name": "index___en",
+    "path": "/",
+    "component": "C:\\\\Users\\\\Francisco\\\\Desktop\\\\VUE\\\\veluxi\\\\veluxi_v217\\\\veluxi\\\\packages\\\\saas-theme\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_d64a4610"
+  }
+]
