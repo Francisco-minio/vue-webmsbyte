@@ -93,7 +93,7 @@
               <span class="ion-logo-facebook icon" />
             </v-btn>
             <v-btn
-              text
+              text 
               icon
               class="button"
             >
@@ -139,17 +139,17 @@
 </style>
 
 <script>
-import logo from '~/static/images/saas-logo.svg'
+import logo from '~/static/images/msbyte-logo.png'
 import brand from '~/static/text/brand'
 
 export default {
   data: () => ({
     logo: logo,
     brand: brand,
-    lang: 'en',
+    lang: 'Es',
     footers: [
       {
-        title: 'Company',
+        title: 'Compañia',
         description: ['Team', 'History', 'Contact us', 'Locations'],
         link: ['#team', '#history', '#contact-us', '#locations']
       },

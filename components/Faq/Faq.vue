@@ -5,7 +5,7 @@
         <v-col md="6" class="pa-6">
           <title-main :align="isMobile ? 'center' : 'left'">
             <strong>
-              FAQ
+              Que hacemos?
             </strong>
           </title-main>
           <p

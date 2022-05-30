@@ -1,4 +1,4 @@
-import locale6010b66b from '../..\\static\\lang\\en-US.js'
+import locale2477a5a6 from '../..\\static\\lang\\id-Es.js'
 
 export const Constants = {
   COMPONENT_OPTIONS_KEY: "nuxtI18n",
@@ -10,10 +10,10 @@ export const nuxtOptions = {
   trailingSlash: undefined,
 }
 export const options = {
-  vueI18n: {"fallbackLocale":"en"},
+  vueI18n: {"fallbackLocale":"Es"},
   vueI18nLoader: false,
   locales: [{"code":"Es","iso":"eS-Es","name":"Español","file":"id-Es.js","dir":"ltr"},{"code":"en","iso":"en-US","name":"English","file":"en-US.js","dir":"ltr"}],
-  defaultLocale: "en",
+  defaultLocale: "Es",
   defaultDirection: "ltr",
   routesNameSeparator: "___",
   defaultLocaleRouteNameSuffix: "default",
@@ -38,6 +38,6 @@ export const options = {
 }
 
 export const localeMessages = {
-  'en-US.js': () => Promise.resolve(locale6010b66b),
-  'id-Es.js': () => import('../..\\static\\lang\\id-Es.js' /* webpackChunkName: "lang-id-Es.js" */),
+  'id-Es.js': () => Promise.resolve(locale2477a5a6),
+  'en-US.js': () => import('../..\\static\\lang\\en-US.js' /* webpackChunkName: "lang-en-US.js" */),
 }

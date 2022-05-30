@@ -25,7 +25,7 @@ export default {
         '/images/logos/coin.png',
         '/images/logos/mobile.png',
         '/images/logos/profile.png',
-        '/images/logos/saas.png'
+        '/images/logos/msbyte-logo.png'
       ]
     }
   }

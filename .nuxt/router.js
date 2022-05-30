@@ -24,43 +24,43 @@ export const routerOptions = {
   routes: [{
     path: "/blank-page",
     component: _0b6c1432,
-    name: "blank-page___en"
+    name: "blank-page___Es"
   }, {
     path: "/contact",
     component: _8a2fd474,
-    name: "contact___en"
+    name: "contact___Es"
   }, {
-    path: "/Es",
+    path: "/en",
     component: _d64a4610,
-    name: "index___Es"
+    name: "index___en"
   }, {
     path: "/login",
     component: _5e82800f,
-    name: "login___en"
+    name: "login___Es"
   }, {
     path: "/register",
     component: _1a752b26,
-    name: "register___en"
-  }, {
-    path: "/Es/blank-page",
-    component: _0b6c1432,
-    name: "blank-page___Es"
-  }, {
-    path: "/Es/contact",
-    component: _8a2fd474,
-    name: "contact___Es"
-  }, {
-    path: "/Es/login",
-    component: _5e82800f,
-    name: "login___Es"
-  }, {
-    path: "/Es/register",
-    component: _1a752b26,
     name: "register___Es"
+  }, {
+    path: "/en/blank-page",
+    component: _0b6c1432,
+    name: "blank-page___en"
+  }, {
+    path: "/en/contact",
+    component: _8a2fd474,
+    name: "contact___en"
+  }, {
+    path: "/en/login",
+    component: _5e82800f,
+    name: "login___en"
+  }, {
+    path: "/en/register",
+    component: _1a752b26,
+    name: "register___en"
   }, {
     path: "/",
     component: _d64a4610,
-    name: "index___en"
+    name: "index___Es"
   }],
 
   fallback: false
