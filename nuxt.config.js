@@ -191,15 +191,14 @@ module.exports = {
                     exclude: /Critical dependency: the request of a dependency is an expression/
                 })
             );
-            //      if (ctx.isDev && ctx.isClient) {
-            //        config.plugins.push(
-            //          new ESLintPlugin({
-            //            extensions: ["js", "vue"],
-            //            exclude: ["node_modules", "static"],
-            //            fix: false
-            //          })
-            //        );
-            //      }
+            if (ctx.isDev && ctx.isClient) {
+                config.plugins.push(
+                    new ESLintPlugin({
+                        exclude: ["node_modules", "static"],
+                        fix: false
+                    })
+                );
+            }
         }
     },
     /*
