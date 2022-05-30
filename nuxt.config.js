@@ -195,7 +195,7 @@ module.exports = {
                 config.plugins.push(
                     new ESLintPlugin({
                         exclude: ["node_modules", "static"],
-                        fix: false
+                        fix: true
                     })
                 );
             }
