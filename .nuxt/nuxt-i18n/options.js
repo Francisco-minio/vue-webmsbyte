@@ -1,4 +1,4 @@
-import locale2477a5a6 from '../..\\static\\lang\\id-Es.js'
+import locale2477a5a6 from '../../static/lang/id-Es.js'
 
 export const Constants = {
   COMPONENT_OPTIONS_KEY: "nuxtI18n",
@@ -20,7 +20,7 @@ export const options = {
   sortRoutes: true,
   strategy: "prefix_except_default",
   lazy: true,
-  langDir: "C:\\Users\\Francisco\\Desktop\\VUE\\veluxi\\veluxi_v217\\veluxi\\packages\\saas-theme\\static\\lang",
+  langDir: "/Users/franciscominio/Documents/GitHub/vue-webmsbyte/static/lang",
   rootRedirect: null,
   detectBrowserLanguage: {"alwaysRedirect":true,"cookieCrossOrigin":false,"cookieDomain":null,"cookieKey":"i18n_redirected","cookieSecure":false,"fallbackLocale":"","redirectOn":"root","useCookie":true},
   differentDomains: false,
@@ -39,5 +39,5 @@ export const options = {
 
 export const localeMessages = {
   'id-Es.js': () => Promise.resolve(locale2477a5a6),
-  'en-US.js': () => import('../..\\static\\lang\\en-US.js' /* webpackChunkName: "lang-en-US.js" */),
+  'en-US.js': () => import('../../static/lang/en-US.js' /* webpackChunkName: "lang-en-US.js" */),
 }

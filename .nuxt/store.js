@@ -13,7 +13,7 @@ let store = {};
   // Enforce store modules
   store.modules = store.modules || {}
 
-  resolveStoreModules(require('..\\store\\breakpoints.js'), 'breakpoints.js')
+  resolveStoreModules(require('../store/breakpoints.js'), 'breakpoints.js')
 
   // If the environment supports hot reloading...
 })()

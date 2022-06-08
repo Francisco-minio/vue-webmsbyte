@@ -4,11 +4,11 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _0b6c1432 = () => interopDefault(import('..\\pages\\blank-page.vue' /* webpackChunkName: "pages/blank-page" */))
-const _8a2fd474 = () => interopDefault(import('..\\pages\\contact.vue' /* webpackChunkName: "pages/contact" */))
-const _d64a4610 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
-const _5e82800f = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
-const _1a752b26 = () => interopDefault(import('..\\pages\\register.vue' /* webpackChunkName: "pages/register" */))
+const _7c2a55fd = () => interopDefault(import('../pages/blank-page.vue' /* webpackChunkName: "pages/blank-page" */))
+const _3141c04a = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
+const _6a47684d = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _33ef0b64 = () => interopDefault(import('../pages/login.vue' /* webpackChunkName: "pages/login" */))
+const _552fa2f8 = () => interopDefault(import('../pages/register.vue' /* webpackChunkName: "pages/register" */))
 
 const emptyFn = () => {}
 
@@ -23,43 +23,43 @@ export const routerOptions = {
 
   routes: [{
     path: "/blank-page",
-    component: _0b6c1432,
+    component: _7c2a55fd,
     name: "blank-page___Es"
   }, {
     path: "/contact",
-    component: _8a2fd474,
+    component: _3141c04a,
     name: "contact___Es"
   }, {
     path: "/en",
-    component: _d64a4610,
+    component: _6a47684d,
     name: "index___en"
   }, {
     path: "/login",
-    component: _5e82800f,
+    component: _33ef0b64,
     name: "login___Es"
   }, {
     path: "/register",
-    component: _1a752b26,
+    component: _552fa2f8,
     name: "register___Es"
   }, {
     path: "/en/blank-page",
-    component: _0b6c1432,
+    component: _7c2a55fd,
     name: "blank-page___en"
   }, {
     path: "/en/contact",
-    component: _8a2fd474,
+    component: _3141c04a,
     name: "contact___en"
   }, {
     path: "/en/login",
-    component: _5e82800f,
+    component: _33ef0b64,
     name: "login___en"
   }, {
     path: "/en/register",
-    component: _1a752b26,
+    component: _552fa2f8,
     name: "register___en"
   }, {
     path: "/",
-    component: _d64a4610,
+    component: _6a47684d,
     name: "index___Es"
   }],
 

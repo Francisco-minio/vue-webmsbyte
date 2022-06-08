@@ -68,7 +68,7 @@
         "eslint-webpack-plugin": "^2.6.0",
         "nodemon": "^2.0.1",
         "prettier": "1.14.3",
-        "webpack": "^5.73.0",
+        "webpack": "^4.46.0",
         "webpack-dev-server": "^4.9.2"
     }
 }
