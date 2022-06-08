@@ -184,22 +184,22 @@ module.exports = {
         loaders: {
             vus: { cacheBusting: true },
             scss: { sourceMap: false }
+        },
+        extend(config, ctx) {
+            config.plugins.push(
+                new FilterWarningsPlugin({
+                    exclude: /Critical dependency: the request of a dependency is an expression/
+                })
+            );
+            if (ctx.isDev && ctx.isClient) {
+                config.plugins.push(
+                    new ESLintPlugin({
+                        exclude: ["node_modules", "static"],
+                        fix: true
+                    })
+                );
+            }
         }
-        //extend(config, ctx) {
-        //  config.plugins.push(
-        //    new FilterWarningsPlugin({
-        //      exclude: /Critical dependency: the request of a dependency is an expression/
-        //})
-        //);
-        //if (ctx.isDev && ctx.isClient) {
-        //  config.plugins.push(
-        //    new ESLintPlugin({
-        //      exclude: ["node_modules", "static"],
-        //    fix: true
-        // })
-        // );
-        //  }
-        //  }
     },
     /*
      ** Page Layout transition
