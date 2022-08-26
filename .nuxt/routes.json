@@ -2,71 +2,71 @@
   {
     "name": "blank-page___Es",
     "path": "/blank-page",
-    "component": "C:\\\\Users\\\\Francisco\\\\Desktop\\\\VUE\\\\veluxi\\\\veluxi_v217\\\\veluxi\\\\packages\\\\saas-theme\\\\pages\\\\blank-page.vue",
+    "component": "/Users/franciscominio/Documents/GitHub/vue-webmsbyte/pages/blank-page.vue",
     "chunkName": "pages/blank-page",
-    "_name": "_0b6c1432"
+    "_name": "_7c2a55fd"
   },
   {
     "name": "contact___Es",
     "path": "/contact",
-    "component": "C:\\\\Users\\\\Francisco\\\\Desktop\\\\VUE\\\\veluxi\\\\veluxi_v217\\\\veluxi\\\\packages\\\\saas-theme\\\\pages\\\\contact.vue",
+    "component": "/Users/franciscominio/Documents/GitHub/vue-webmsbyte/pages/contact.vue",
     "chunkName": "pages/contact",
-    "_name": "_8a2fd474"
+    "_name": "_3141c04a"
   },
   {
     "name": "index___en",
     "path": "/en",
-    "component": "C:\\\\Users\\\\Francisco\\\\Desktop\\\\VUE\\\\veluxi\\\\veluxi_v217\\\\veluxi\\\\packages\\\\saas-theme\\\\pages\\\\index.vue",
+    "component": "/Users/franciscominio/Documents/GitHub/vue-webmsbyte/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_d64a4610"
+    "_name": "_6a47684d"
   },
   {
     "name": "login___Es",
     "path": "/login",
-    "component": "C:\\\\Users\\\\Francisco\\\\Desktop\\\\VUE\\\\veluxi\\\\veluxi_v217\\\\veluxi\\\\packages\\\\saas-theme\\\\pages\\\\login.vue",
+    "component": "/Users/franciscominio/Documents/GitHub/vue-webmsbyte/pages/login.vue",
     "chunkName": "pages/login",
-    "_name": "_5e82800f"
+    "_name": "_33ef0b64"
   },
   {
     "name": "register___Es",
     "path": "/register",
-    "component": "C:\\\\Users\\\\Francisco\\\\Desktop\\\\VUE\\\\veluxi\\\\veluxi_v217\\\\veluxi\\\\packages\\\\saas-theme\\\\pages\\\\register.vue",
+    "component": "/Users/franciscominio/Documents/GitHub/vue-webmsbyte/pages/register.vue",
     "chunkName": "pages/register",
-    "_name": "_1a752b26"
+    "_name": "_552fa2f8"
   },
   {
     "name": "blank-page___en",
     "path": "/en/blank-page",
-    "component": "C:\\\\Users\\\\Francisco\\\\Desktop\\\\VUE\\\\veluxi\\\\veluxi_v217\\\\veluxi\\\\packages\\\\saas-theme\\\\pages\\\\blank-page.vue",
+    "component": "/Users/franciscominio/Documents/GitHub/vue-webmsbyte/pages/blank-page.vue",
     "chunkName": "pages/blank-page",
-    "_name": "_0b6c1432"
+    "_name": "_7c2a55fd"
   },
   {
     "name": "contact___en",
     "path": "/en/contact",
-    "component": "C:\\\\Users\\\\Francisco\\\\Desktop\\\\VUE\\\\veluxi\\\\veluxi_v217\\\\veluxi\\\\packages\\\\saas-theme\\\\pages\\\\contact.vue",
+    "component": "/Users/franciscominio/Documents/GitHub/vue-webmsbyte/pages/contact.vue",
     "chunkName": "pages/contact",
-    "_name": "_8a2fd474"
+    "_name": "_3141c04a"
   },
   {
     "name": "login___en",
     "path": "/en/login",
-    "component": "C:\\\\Users\\\\Francisco\\\\Desktop\\\\VUE\\\\veluxi\\\\veluxi_v217\\\\veluxi\\\\packages\\\\saas-theme\\\\pages\\\\login.vue",
+    "component": "/Users/franciscominio/Documents/GitHub/vue-webmsbyte/pages/login.vue",
     "chunkName": "pages/login",
-    "_name": "_5e82800f"
+    "_name": "_33ef0b64"
   },
   {
     "name": "register___en",
     "path": "/en/register",
-    "component": "C:\\\\Users\\\\Francisco\\\\Desktop\\\\VUE\\\\veluxi\\\\veluxi_v217\\\\veluxi\\\\packages\\\\saas-theme\\\\pages\\\\register.vue",
+    "component": "/Users/franciscominio/Documents/GitHub/vue-webmsbyte/pages/register.vue",
     "chunkName": "pages/register",
-    "_name": "_1a752b26"
+    "_name": "_552fa2f8"
   },
   {
     "name": "index___Es",
     "path": "/",
-    "component": "C:\\\\Users\\\\Francisco\\\\Desktop\\\\VUE\\\\veluxi\\\\veluxi_v217\\\\veluxi\\\\packages\\\\saas-theme\\\\pages\\\\index.vue",
+    "component": "/Users/franciscominio/Documents/GitHub/vue-webmsbyte/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_d64a4610"
+    "_name": "_6a47684d"
   }
 ]
