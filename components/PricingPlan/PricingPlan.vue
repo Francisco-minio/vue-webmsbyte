@@ -26,9 +26,9 @@
             class="item"
           >
             <pricing-card
-              :price="0"
+              :price="120"
               :feature-list="feature.basic"
-              title="Basic"
+              title="Basico"
               desc="Interdum et malesuada fames ac ante ipsum primis in faucibus. "
               type="basic"
             />
@@ -41,9 +41,9 @@
             class="item"
           >
             <pricing-card
-              :price="24"
+              :price="280"
               :feature-list="feature.best"
-              title="Best Value"
+              title="Mejor Opción"
               desc="Interdum et malesuada fames ac ante ipsum primis in faucibus. "
               type="value"
             />
@@ -56,7 +56,7 @@
             class="item"
           >
             <pricing-card
-              :price="54"
+              :price="420"
               :feature-list="feature.pro"
               title="Pro"
               desc="Interdum et malesuada fames ac ante ipsum primis in faucibus. "
@@ -70,9 +70,9 @@
             class="item"
           >
             <pricing-card
-              :price="99"
+              :price="600"
               :feature-list="feature.enterprise"
-              title="Enterprise"
+              title="Empresa"
               desc=" Interdum et malesuada fames ac ante ipsum primis in faucibus. "
             />
           </u-animate>
@@ -92,16 +92,16 @@ import PricingCard from '../Cards/Pricing'
 
 const featureList = {
   basic: [
-    'Nam sollicitudin dignissim',
-    'Cras convallis lacus',
-    'Quisque ut metus'
+    'Diseño Web básico',
+    '2 páginas + Contacto',
+    'Correo básico gratis'
   ],
   best: [
-    'Nam sollicitudin dignissim',
-    'Cras convallis lacus',
-    'Quisque ut metus',
-    'Vivamus sit amet',
-    'Cras convallis lacus orci'
+    'Página web autoadministrable',
+    '4 páginas + Contacto',
+    '1 Correo Corporativo 30 GB',
+    'Mantenciones mensuales',
+    'Google Analytics + Cloudflare '
   ],
   pro: [
     'Nam sollicitudin dignissim',

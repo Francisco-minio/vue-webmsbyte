@@ -163,9 +163,9 @@
                 centered
               >
                 <v-tabs-slider color="primary" />
-                <v-tab class="tab-label" href="#tab-1">Pellentesque</v-tab>
-                <v-tab class="tab-label" href="#tab-2">Donec</v-tab>
-                <v-tab class="tab-label" href="#tab-3">Vestibulum</v-tab>
+                <v-tab class="tab-label" href="#tab-1">Desarrollo Web</v-tab>
+                <v-tab class="tab-label" href="#tab-2">Correo Corporativo</v-tab>
+                <v-tab class="tab-label" href="#tab-3">Soluciones Empresa</v-tab>
                 <v-tab-item value="tab-1">
                   <div class="tab-content">
                     <section>

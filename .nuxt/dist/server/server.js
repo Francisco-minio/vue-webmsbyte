@@ -1,944 +1,1099 @@
 module.exports =
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// object to store loaded chunks
-/******/ 	// "0" means "already loaded"
-/******/ 	var installedChunks = {
-/******/ 		0: 0
-/******/ 	};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/ 	// This file contains only the entry chunk.
-/******/ 	// The chunk loading function for additional chunks
-/******/ 	__webpack_require__.e = function requireEnsure(chunkId) {
-/******/ 		var promises = [];
-/******/
-/******/
-/******/ 		// require() chunk loading for javascript
-/******/
-/******/ 		// "0" is the signal for "already loaded"
-/******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("./" + ({"1":"lang-en-US.js","2":"pages/blank-page","3":"pages/contact","4":"pages/index","5":"pages/login","6":"pages/register"}[chunkId]||chunkId) + ".js");
-/******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
-/******/ 			for(var moduleId in moreModules) {
-/******/ 				modules[moduleId] = moreModules[moduleId];
-/******/ 			}
-/******/ 			for(var i = 0; i < chunkIds.length; i++)
-/******/ 				installedChunks[chunkIds[i]] = 0;
-/******/ 		}
-/******/ 		return Promise.all(promises);
-/******/ 	};
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// define __esModule on exports
-/******/ 	__webpack_require__.r = function(exports) {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/
-/******/ 	// create a fake namespace object
-/******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
-/******/ 	// mode & 4: return value when already ns object
-/******/ 	// mode & 8|1: behave like require
-/******/ 	__webpack_require__.t = function(value, mode) {
-/******/ 		if(mode & 1) value = __webpack_require__(value);
-/******/ 		if(mode & 8) return value;
-/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
-/******/ 		var ns = Object.create(null);
-/******/ 		__webpack_require__.r(ns);
-/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
-/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
-/******/ 		return ns;
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/_nuxt/";
-/******/
-/******/ 	// uncaught error handler for webpack runtime
-/******/ 	__webpack_require__.oe = function(err) {
-/******/ 		process.nextTick(function() {
-/******/ 			throw err; // catch this error by using import().catch()
-/******/ 		});
-/******/ 	};
-/******/
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 113);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return createSimpleFunctional; });
-/* unused harmony export directiveConfig */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return addOnceEventListener; });
-/* unused harmony export passiveSupported */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return addPassiveEventListener; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return getNestedValue; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return deepEqual; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return getObjectValueByPath; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return getPropertyFromItem; });
-/* unused harmony export createRange */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return getZIndex; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return escapeHTML; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return filterObjectOnKeys; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return convertToUnit; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return kebabCase; });
-/* unused harmony export isObject */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return keyCodes; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "w", function() { return remapInternalIcon; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return keys; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return camelize; });
-/* unused harmony export arrayDiff */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return upperFirst; });
-/* unused harmony export groupItems */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "y", function() { return wrapInArray; });
-/* unused harmony export sortItems */
-/* unused harmony export defaultFilter */
-/* unused harmony export searchItems */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return getSlotType; });
-/* unused harmony export debounce */
-/* unused harmony export throttle */
-/* unused harmony export getPrefixedScopedSlots */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return getSlot; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return clamp; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v", function() { return padEnd; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return chunk; });
-/* unused harmony export humanReadableFileSize */
-/* unused harmony export camelizeObjectKeys */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return mergeDeep; });
-/* unused harmony export fillArray */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return composedPath; });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
-
-function createSimpleFunctional(c, el = 'div', name) {
-  return vue__WEBPACK_IMPORTED_MODULE_0___default.a.extend({
-    name: name || c.replace(/__/g, '-'),
-    functional: true,
-    props: {
-      tag: {
-        type: String,
-        default: el
-      }
-    },
-
-    render(h, {
-      data,
-      props,
-      children
-    }) {
-      data.staticClass = `${c} ${data.staticClass || ''}`.trim();
-      return h(props.tag, data, children);
-    }
-
-  });
-}
-function directiveConfig(binding, defaults = {}) {
-  return { ...defaults,
-    ...binding.modifiers,
-    value: binding.arg,
-    ...(binding.value || {})
-  };
-}
-function addOnceEventListener(el, eventName, cb, options = false) {
-  const once = event => {
-    cb(event);
-    el.removeEventListener(eventName, once, options);
-  };
-
-  el.addEventListener(eventName, once, options);
-}
-let passiveSupported = false;
-
-try {
-  if (typeof window !== 'undefined') {
-    const testListenerOpts = Object.defineProperty({}, 'passive', {
-      get: () => {
-        passiveSupported = true;
-      }
-    });
-    window.addEventListener('testListener', testListenerOpts, testListenerOpts);
-    window.removeEventListener('testListener', testListenerOpts, testListenerOpts);
-  }
-} catch (e) {
-  console.warn(e);
-}
-/* eslint-disable-line no-console */
-
-
-
-function addPassiveEventListener(el, event, cb, options) {
-  el.addEventListener(event, cb, passiveSupported ? options : false);
-}
-function getNestedValue(obj, path, fallback) {
-  const last = path.length - 1;
-  if (last < 0) return obj === undefined ? fallback : obj;
-
-  for (let i = 0; i < last; i++) {
-    if (obj == null) {
-      return fallback;
-    }
-
-    obj = obj[path[i]];
-  }
-
-  if (obj == null) return fallback;
-  return obj[path[last]] === undefined ? fallback : obj[path[last]];
-}
-function deepEqual(a, b) {
-  if (a === b) return true;
-
-  if (a instanceof Date && b instanceof Date && a.getTime() !== b.getTime()) {
-    // If the values are Date, compare them as timestamps
-    return false;
-  }
-
-  if (a !== Object(a) || b !== Object(b)) {
-    // If the values aren't objects, they were already checked for equality
-    return false;
-  }
-
-  const props = Object.keys(a);
-
-  if (props.length !== Object.keys(b).length) {
-    // Different number of props, don't bother to check
-    return false;
-  }
-
-  return props.every(p => deepEqual(a[p], b[p]));
-}
-function getObjectValueByPath(obj, path, fallback) {
-  // credit: http://stackoverflow.com/questions/6491463/accessing-nested-javascript-objects-with-string-key#comment55278413_6491621
-  if (obj == null || !path || typeof path !== 'string') return fallback;
-  if (obj[path] !== undefined) return obj[path];
-  path = path.replace(/\[(\w+)\]/g, '.$1'); // convert indexes to properties
-
-  path = path.replace(/^\./, ''); // strip a leading dot
-
-  return getNestedValue(obj, path.split('.'), fallback);
-}
-function getPropertyFromItem(item, property, fallback) {
-  if (property == null) return item === undefined ? fallback : item;
-  if (item !== Object(item)) return fallback === undefined ? item : fallback;
-  if (typeof property === 'string') return getObjectValueByPath(item, property, fallback);
-  if (Array.isArray(property)) return getNestedValue(item, property, fallback);
-  if (typeof property !== 'function') return fallback;
-  const value = property(item, fallback);
-  return typeof value === 'undefined' ? fallback : value;
-}
-function createRange(length) {
-  return Array.from({
-    length
-  }, (v, k) => k);
-}
-function getZIndex(el) {
-  if (!el || el.nodeType !== Node.ELEMENT_NODE) return 0;
-  const index = +window.getComputedStyle(el).getPropertyValue('z-index');
-  if (!index) return getZIndex(el.parentNode);
-  return index;
-}
-const tagsToReplace = {
-  '&': '&amp;',
-  '<': '&lt;',
-  '>': '&gt;'
-};
-function escapeHTML(str) {
-  return str.replace(/[&<>]/g, tag => tagsToReplace[tag] || tag);
-}
-function filterObjectOnKeys(obj, keys) {
-  const filtered = {};
-
-  for (let i = 0; i < keys.length; i++) {
-    const key = keys[i];
-
-    if (typeof obj[key] !== 'undefined') {
-      filtered[key] = obj[key];
-    }
-  }
-
-  return filtered;
-}
-function convertToUnit(str, unit = 'px') {
-  if (str == null || str === '') {
-    return undefined;
-  } else if (isNaN(+str)) {
-    return String(str);
-  } else {
-    return `${Number(str)}${unit}`;
-  }
-}
-function kebabCase(str) {
-  return (str || '').replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
-}
-function isObject(obj) {
-  return obj !== null && typeof obj === 'object';
-} // KeyboardEvent.keyCode aliases
-
-const keyCodes = Object.freeze({
-  enter: 13,
-  tab: 9,
-  delete: 46,
-  esc: 27,
-  space: 32,
-  up: 38,
-  down: 40,
-  left: 37,
-  right: 39,
-  end: 35,
-  home: 36,
-  del: 46,
-  backspace: 8,
-  insert: 45,
-  pageup: 33,
-  pagedown: 34,
-  shift: 16
-});
-/**
- * This remaps internal names like '$cancel' or '$vuetify.icons.cancel'
- * to the current name or component for that icon.
- */
-
-function remapInternalIcon(vm, iconName) {
-  // Look for custom component in the configuration
-  const component = vm.$vuetify.icons.component; // Look for overrides
-
-  if (iconName.startsWith('$')) {
-    // Get the target icon name
-    const iconPath = `$vuetify.icons.values.${iconName.split('$').pop().split('.').pop()}`; // Now look up icon indirection name,
-    // e.g. '$vuetify.icons.values.cancel'
-
-    const override = getObjectValueByPath(vm, iconPath, iconName);
-    if (typeof override === 'string') iconName = override;else return override;
-  }
-
-  if (component == null) {
-    return iconName;
-  }
-
-  return {
-    component,
-    props: {
-      icon: iconName
-    }
-  };
-}
-function keys(o) {
-  return Object.keys(o);
-}
-/**
- * Camelize a hyphen-delimited string.
- */
-
-const camelizeRE = /-(\w)/g;
-const camelize = str => {
-  return str.replace(camelizeRE, (_, c) => c ? c.toUpperCase() : '');
-};
-/**
- * Returns the set difference of B and A, i.e. the set of elements in B but not in A
- */
-
-function arrayDiff(a, b) {
-  const diff = [];
-
-  for (let i = 0; i < b.length; i++) {
-    if (a.indexOf(b[i]) < 0) diff.push(b[i]);
-  }
-
-  return diff;
-}
-/**
- * Makes the first character of a string uppercase
- */
-
-function upperFirst(str) {
-  return str.charAt(0).toUpperCase() + str.slice(1);
-}
-function groupItems(items, groupBy, groupDesc) {
-  const key = groupBy[0];
-  const groups = [];
-  let current;
-
-  for (let i = 0; i < items.length; i++) {
-    const item = items[i];
-    const val = getObjectValueByPath(item, key, null);
-
-    if (current !== val) {
-      current = val;
-      groups.push({
-        name: val != null ? val : '',
-        items: []
-      });
-    }
-
-    groups[groups.length - 1].items.push(item);
-  }
-
-  return groups;
-}
-function wrapInArray(v) {
-  return v != null ? Array.isArray(v) ? v : [v] : [];
-}
-function sortItems(items, sortBy, sortDesc, locale, customSorters) {
-  if (sortBy === null || !sortBy.length) return items;
-  const stringCollator = new Intl.Collator(locale, {
-    sensitivity: 'accent',
-    usage: 'sort'
-  });
-  return items.sort((a, b) => {
-    for (let i = 0; i < sortBy.length; i++) {
-      const sortKey = sortBy[i];
-      let sortA = getObjectValueByPath(a, sortKey);
-      let sortB = getObjectValueByPath(b, sortKey);
-
-      if (sortDesc[i]) {
-        [sortA, sortB] = [sortB, sortA];
-      }
-
-      if (customSorters && customSorters[sortKey]) {
-        const customResult = customSorters[sortKey](sortA, sortB);
-        if (!customResult) continue;
-        return customResult;
-      } // Check if both cannot be evaluated
-
-
-      if (sortA === null && sortB === null) {
-        continue;
-      } // Dates should be compared numerically
-
-
-      if (sortA instanceof Date && sortB instanceof Date) {
-        return sortA.getTime() - sortB.getTime();
-      }
-
-      [sortA, sortB] = [sortA, sortB].map(s => (s || '').toString().toLocaleLowerCase());
-
-      if (sortA !== sortB) {
-        if (!isNaN(sortA) && !isNaN(sortB)) return Number(sortA) - Number(sortB);
-        return stringCollator.compare(sortA, sortB);
-      }
-    }
-
-    return 0;
-  });
-}
-function defaultFilter(value, search, item) {
-  return value != null && search != null && typeof value !== 'boolean' && value.toString().toLocaleLowerCase().indexOf(search.toLocaleLowerCase()) !== -1;
-}
-function searchItems(items, search) {
-  if (!search) return items;
-  search = search.toString().toLowerCase();
-  if (search.trim() === '') return items;
-  return items.filter(item => Object.keys(item).some(key => defaultFilter(getObjectValueByPath(item, key), search, item)));
-}
-/**
- * Returns:
- *  - 'normal' for old style slots - `<template slot="default">`
- *  - 'scoped' for old style scoped slots (`<template slot="default" slot-scope="data">`) or bound v-slot (`#default="data"`)
- *  - 'v-slot' for unbound v-slot (`#default`) - only if the third param is true, otherwise counts as scoped
- */
-
-function getSlotType(vm, name, split) {
-  if (vm.$slots.hasOwnProperty(name) && vm.$scopedSlots.hasOwnProperty(name) && vm.$scopedSlots[name].name) {
-    return split ? 'v-slot' : 'scoped';
-  }
-
-  if (vm.$slots.hasOwnProperty(name)) return 'normal';
-  if (vm.$scopedSlots.hasOwnProperty(name)) return 'scoped';
-}
-function debounce(fn, delay) {
-  let timeoutId = 0;
-  return (...args) => {
-    clearTimeout(timeoutId);
-    timeoutId = setTimeout(() => fn(...args), delay);
-  };
-}
-function throttle(fn, limit) {
-  let throttling = false;
-  return (...args) => {
-    if (!throttling) {
-      throttling = true;
-      setTimeout(() => throttling = false, limit);
-      return fn(...args);
-    }
-  };
-}
-function getPrefixedScopedSlots(prefix, scopedSlots) {
-  return Object.keys(scopedSlots).filter(k => k.startsWith(prefix)).reduce((obj, k) => {
-    obj[k.replace(prefix, '')] = scopedSlots[k];
-    return obj;
-  }, {});
-}
-function getSlot(vm, name = 'default', data, optional = false) {
-  if (vm.$scopedSlots.hasOwnProperty(name)) {
-    return vm.$scopedSlots[name](data instanceof Function ? data() : data);
-  } else if (vm.$slots.hasOwnProperty(name) && (!data || optional)) {
-    return vm.$slots[name];
-  }
-
-  return undefined;
-}
-function clamp(value, min = 0, max = 1) {
-  return Math.max(min, Math.min(max, value));
-}
-function padEnd(str, length, char = '0') {
-  return str + char.repeat(Math.max(0, length - str.length));
-}
-function chunk(str, size = 1) {
-  const chunked = [];
-  let index = 0;
-
-  while (index < str.length) {
-    chunked.push(str.substr(index, size));
-    index += size;
-  }
-
-  return chunked;
-}
-function humanReadableFileSize(bytes, binary = false) {
-  const base = binary ? 1024 : 1000;
-
-  if (bytes < base) {
-    return `${bytes} B`;
-  }
-
-  const prefix = binary ? ['Ki', 'Mi', 'Gi'] : ['k', 'M', 'G'];
-  let unit = -1;
-
-  while (Math.abs(bytes) >= base && unit < prefix.length - 1) {
-    bytes /= base;
-    ++unit;
-  }
-
-  return `${bytes.toFixed(1)} ${prefix[unit]}B`;
-}
-function camelizeObjectKeys(obj) {
-  if (!obj) return {};
-  return Object.keys(obj).reduce((o, key) => {
-    o[camelize(key)] = obj[key];
-    return o;
-  }, {});
-}
-function mergeDeep(source = {}, target = {}) {
-  for (const key in target) {
-    const sourceProperty = source[key];
-    const targetProperty = target[key]; // Only continue deep merging if
-    // both properties are objects
-
-    if (isObject(sourceProperty) && isObject(targetProperty)) {
-      source[key] = mergeDeep(sourceProperty, targetProperty);
-      continue;
-    }
-
-    source[key] = targetProperty;
-  }
-
-  return source;
-}
-function fillArray(length, obj) {
-  return Array(length).fill(obj);
-}
-/**  Polyfill for Event.prototype.composedPath */
-
-function composedPath(e) {
-  if (e.composedPath) return e.composedPath();
-  const path = [];
-  let el = e.target;
-
-  while (el) {
-    path.push(el);
-
-    if (el.tagName === 'HTML') {
-      path.push(document);
-      path.push(window);
-      return path;
-    }
-
-    el = el.parentElement;
-  }
-
-  return path;
-}
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
-module.exports = require("vue");
-
-/***/ }),
-/* 2 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, "a", function() { return /* binding */ Constants; });
-__webpack_require__.d(__webpack_exports__, "c", function() { return /* binding */ nuxtOptions; });
-__webpack_require__.d(__webpack_exports__, "d", function() { return /* binding */ options; });
-__webpack_require__.d(__webpack_exports__, "b", function() { return /* binding */ localeMessages; });
-
-// CONCATENATED MODULE: ./static/lang/id-Es.js
-/* harmony default export */ var id_Es = (() => {
-  return new Promise(function (resolve) {
-    resolve({
-      common: {
-        "title": "Un simple Ejemplo",
-        "subtitle": "It's a blank-page. Start to build your'e page from here.",
-        "error_with_status": "An error occurred on server",
-        "404": "La página que buscas no existe.",
-        "404_subtitle": "Puedes volver al inicio y buscar lo que necesitas!.",
-        "back": "Regresa a casa",
-        "error_without_status": "An error occurred on the server",
-        "contact_title": "Free Project Quote",
-        "contact_title2": "Say Hello to Us",
-        "contact_subtitle": "Do you have any questions? Are you ready to reduce cost and create new revenue? Or you simply want to say hi? Drop us a message.",
-        "form_name": "Cual es tu nombre? *",
-        "form_email": "Cual es tu email? *",
-        "form_phone": "Deja tu número de telefono?",
-        "form_company": "Nombre empresa?",
-        "form_message": "Escribe tu mensaje aquí",
-        "form_terms": "I have read and accept the Terms of",
-        "form_privacy": "Service & Privacy Policy *",
-        "form_send": "Enviar Mensaje",
-        "login": "login",
-        "login_create": "Nueva cuenta",
-        "login_or": "O conectate con tu email",
-        "login_email": "Email",
-        "login_password": "Password",
-        "login_remember": "Recuerdame",
-        "login_forgot": "Forgot Password",
-        "continue": "Continuar",
-        "login_title": "Welcome back",
-        "login_subtitle": "Conectate para continuar",
-        "register": "Registrarse",
-        "register_already": "Tienes cuenta?",
-        "register_or": "registrate con tu email",
-        "register_name": "Nombre? *",
-        "register_email": "Email? *",
-        "register_password": "Password",
-        "register_confirm": "Confirmar Password",
-        "register_title": "Nice to meet you :)",
-        "register_subtitle": "Just register to join with us",
-        "accept": "Aceptar",
-        "en": "English",
-        "de": "Deutsch",
-        "zh": "简体中文",
-        "pt": "󠁥󠁮󠁧󠁿Português",
-        "Es": "󠁥󠁮󠁧󠁿Español",
-        "ar": "󠁥󠁮󠁧󠁿العربيّة",
-        "notif_msg": "This is an example of a message that is commonly used for important information to visitors or users. Please click the button beside to close this message."
-      },
-      saasLanding: {
-        "header_login": "Login",
-        "header_register": "Registrarse",
-        "header_language": "lenguaje",
-        "header_theme": "Theme mode",
-        "header_dark": "dark",
-        "header_light": "light",
-        "header_feature": "Msbyte",
-        "header_testimonials": "Proyectos",
-        "header_pricing": "Planes",
-        "header_faq": "Conocenos",
-        "header_contact": "contacto",
-        "banner_title": "Innovación y tecnología",
-        "banner_titlestrong": "Desarrollo Web",
-        "banner_subtitle": "Unete a la comunidad de usuarios de Msbyte, soluciones para emprendedores y empresas.",
-        "banner_watchvideo": "Watch Video",
-        "getstarted": "Comencemos",
-        "counter_month": "Años",
-        "counter_free": "Experiencia",
-        "counter_users": "Clientes",
-        "counter_providers": "Proyectos",
-        "feature_title1": "Act on it-all",
-        "feature_titlestrong1": "in one dashboard",
-        "feature_desc1": "Our audience dashboard shows you pre-built segments like top locations, recent sources of growth, and even customer lifetime value (CLV).",
-        "see_detail": "See Detail",
-        "feature_title2": "Everything you need is a",
-        "feature_titlestrong2": "unique value proposition",
-        "feature_desc2": "With strong technical foundations, has allowed us to leverage business experts to build hundreds of improvements.",
-        "feature_title3": "Aceleramos tu proyecto",
-        "feature_titlestrong3": "Enterprise",
-        "feature_desc3": "Te ayudamos a desarrollar eso que buscas, una nueva imagen en la web, un emprendimiento que llegue a todo el mundo.",
-        "testi_title": "Clientes",
-        "testi_titlestrong": "Proyectos",
-        "pricing_title": "Pricing & Plan",
-        "pricing_subtitle": "The best value designed for your workplace, starting at just $24/user/month.",
-        "faq_subtitle": "Have a question? Check out our frequently asked questions to find your answer.",
-        "caption_news": "nuevos",
-        "caption_event": "eventos",
-        "news_readmore": "Ver más",
-        "footer_waiting": "Que esperas por tener tu propia página web?"
-      }
-    });
-  });
-});
-// CONCATENATED MODULE: ./.nuxt/nuxt-i18n/options.js
-
-const Constants = {
-  COMPONENT_OPTIONS_KEY: "nuxtI18n",
-  STRATEGIES: {
-    "PREFIX": "prefix",
-    "PREFIX_EXCEPT_DEFAULT": "prefix_except_default",
-    "PREFIX_AND_DEFAULT": "prefix_and_default",
-    "NO_PREFIX": "no_prefix"
-  },
-  REDIRECT_ON_OPTIONS: {
-    "ALL": "all",
-    "ROOT": "root",
-    "NO_PREFIX": "no prefix"
-  }
-};
-const nuxtOptions = {
-  isUniversalMode: true,
-  trailingSlash: undefined
-};
-const options = {
-  vueI18n: {
-    "fallbackLocale": "Es"
-  },
-  vueI18nLoader: false,
-  locales: [{
-    "code": "Es",
-    "iso": "eS-Es",
-    "name": "Español",
-    "file": "id-Es.js",
-    "dir": "ltr"
-  }, {
-    "code": "en",
-    "iso": "en-US",
-    "name": "English",
-    "file": "en-US.js",
-    "dir": "ltr"
-  }],
-  defaultLocale: "Es",
-  defaultDirection: "ltr",
-  routesNameSeparator: "___",
-  defaultLocaleRouteNameSuffix: "default",
-  sortRoutes: true,
-  strategy: "prefix_except_default",
-  lazy: true,
-  langDir: "C:\\Users\\Francisco\\Desktop\\VUE\\veluxi\\veluxi_v217\\veluxi\\packages\\saas-theme\\static\\lang",
-  rootRedirect: null,
-  detectBrowserLanguage: {
-    "alwaysRedirect": true,
-    "cookieCrossOrigin": false,
-    "cookieDomain": null,
-    "cookieKey": "i18n_redirected",
-    "cookieSecure": false,
-    "fallbackLocale": "",
-    "redirectOn": "root",
-    "useCookie": true
-  },
-  differentDomains: false,
-  baseUrl: "",
-  vuex: {
-    "moduleName": "i18n",
-    "syncRouteParams": true
-  },
-  parsePages: true,
-  pages: {},
-  skipSettingLocaleOnNavigate: false,
-  onBeforeLanguageSwitch: () => {},
-  onLanguageSwitched: () => null,
-  seo: false,
-  normalizedLocales: [{
-    "code": "Es",
-    "iso": "eS-Es",
-    "name": "Español",
-    "file": "id-Es.js",
-    "dir": "ltr"
-  }, {
-    "code": "en",
-    "iso": "en-US",
-    "name": "English",
-    "file": "en-US.js",
-    "dir": "ltr"
-  }],
-  localeCodes: ["Es", "en"],
-  additionalMessages: []
-};
-const localeMessages = {
-  'id-Es.js': () => Promise.resolve(id_Es),
-  'en-US.js': () => __webpack_require__.e(/* import() | lang-en-US.js */ 1).then(__webpack_require__.bind(null, 352))
-};
-
-/***/ }),
-/* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return mixins; });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
-/* eslint-disable max-len, import/export, no-use-before-define */
-
-function mixins(...args) {
-  return vue__WEBPACK_IMPORTED_MODULE_0___default.a.extend({
-    mixins: args
-  });
-}
-
-/***/ }),
-/* 4 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export consoleInfo */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return consoleWarn; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return consoleError; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return deprecate; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return breaking; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return removed; });
-/* harmony import */ var _framework__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(51);
-/* eslint-disable no-console */
-
-
-function createMessage(message, vm, parent) {
-  if (_framework__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].config.silent) return;
-
-  if (parent) {
-    vm = {
-      _isVue: true,
-      $parent: parent,
-      $options: vm
-    };
-  }
-
-  if (vm) {
-    // Only show each message once per instance
-    vm.$_alreadyWarned = vm.$_alreadyWarned || [];
-    if (vm.$_alreadyWarned.includes(message)) return;
-    vm.$_alreadyWarned.push(message);
-  }
-
-  return `[Vuetify] ${message}` + (vm ? generateComponentTrace(vm) : '');
-}
-
-function consoleInfo(message, vm, parent) {
-  const newMessage = createMessage(message, vm, parent);
-  newMessage != null && console.info(newMessage);
-}
-function consoleWarn(message, vm, parent) {
-  const newMessage = createMessage(message, vm, parent);
-  newMessage != null && console.warn(newMessage);
-}
-function consoleError(message, vm, parent) {
-  const newMessage = createMessage(message, vm, parent);
-  newMessage != null && console.error(newMessage);
-}
-function deprecate(original, replacement, vm, parent) {
-  consoleWarn(`[UPGRADE] '${original}' is deprecated, use '${replacement}' instead.`, vm, parent);
-}
-function breaking(original, replacement, vm, parent) {
-  consoleError(`[BREAKING] '${original}' has been removed, use '${replacement}' instead. For more information, see the upgrade guide https://github.com/vuetifyjs/vuetify/releases/tag/v2.0.0#user-content-upgrade-guide`, vm, parent);
-}
-function removed(original, vm, parent) {
-  consoleWarn(`[REMOVED] '${original}' has been removed. You can safely omit it.`, vm, parent);
-}
-/**
- * Shamelessly stolen from vuejs/vue/blob/dev/src/core/util/debug.js
- */
-
-const classifyRE = /(?:^|[-_])(\w)/g;
-
-const classify = str => str.replace(classifyRE, c => c.toUpperCase()).replace(/[-_]/g, '');
-
-function formatComponentName(vm, includeFile) {
-  if (vm.$root === vm) {
-    return '<Root>';
-  }
-
-  const options = typeof vm === 'function' && vm.cid != null ? vm.options : vm._isVue ? vm.$options || vm.constructor.options : vm || {};
-  let name = options.name || options._componentTag;
-  const file = options.__file;
-
-  if (!name && file) {
-    const match = file.match(/([^/\\]+)\.vue$/);
-    name = match && match[1];
-  }
-
-  return (name ? `<${classify(name)}>` : `<Anonymous>`) + (file && includeFile !== false ? ` at ${file}` : '');
-}
-
-function generateComponentTrace(vm) {
-  if (vm._isVue && vm.$parent) {
-    const tree = [];
-    let currentRecursiveSequence = 0;
-
-    while (vm) {
-      if (tree.length > 0) {
-        const last = tree[tree.length - 1];
-
-        if (last.constructor === vm.constructor) {
-          currentRecursiveSequence++;
-          vm = vm.$parent;
-          continue;
-        } else if (currentRecursiveSequence > 0) {
-          tree[tree.length - 1] = [last, currentRecursiveSequence];
-          currentRecursiveSequence = 0;
+    /******/
+    (function(modules) { // webpackBootstrap
+        /******/ // The module cache
+        /******/
+        var installedModules = {};
+        /******/
+        /******/ // object to store loaded chunks
+        /******/ // "0" means "already loaded"
+        /******/
+        var installedChunks = {
+            /******/
+            0: 0
+                /******/
+        };
+        /******/
+        /******/ // The require function
+        /******/
+        function __webpack_require__(moduleId) {
+            /******/
+            /******/ // Check if module is in cache
+            /******/
+            if (installedModules[moduleId]) {
+                /******/
+                return installedModules[moduleId].exports;
+                /******/
+            }
+            /******/ // Create a new module (and put it into the cache)
+            /******/
+            var module = installedModules[moduleId] = {
+                /******/
+                i: moduleId,
+                /******/
+                l: false,
+                /******/
+                exports: {}
+                /******/
+            };
+            /******/
+            /******/ // Execute the module function
+            /******/
+            modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+            /******/
+            /******/ // Flag the module as loaded
+            /******/
+            module.l = true;
+            /******/
+            /******/ // Return the exports of the module
+            /******/
+            return module.exports;
+            /******/
         }
-      }
+        /******/
+        /******/ // This file contains only the entry chunk.
+        /******/ // The chunk loading function for additional chunks
+        /******/
+        __webpack_require__.e = function requireEnsure(chunkId) {
+            /******/
+            var promises = [];
+            /******/
+            /******/
+            /******/ // require() chunk loading for javascript
+            /******/
+            /******/ // "0" is the signal for "already loaded"
+            /******/
+            if (installedChunks[chunkId] !== 1) {
+                /******/
+                var chunk = require("./" + ({ "1": "lang-en-US.js", "2": "pages/blank-page", "3": "pages/contact", "4": "pages/index", "5": "pages/login", "6": "pages/register" }[chunkId] || chunkId) + ".js");
+                /******/
+                var moreModules = chunk.modules,
+                    chunkIds = chunk.ids;
+                /******/
+                for (var moduleId in moreModules) {
+                    /******/
+                    modules[moduleId] = moreModules[moduleId];
+                    /******/
+                }
+                /******/
+                for (var i = 0; i < chunkIds.length; i++)
+                /******/
+                    installedChunks[chunkIds[i]] = 0;
+                /******/
+            }
+            /******/
+            return Promise.all(promises);
+            /******/
+        };
+        /******/
+        /******/ // expose the modules object (__webpack_modules__)
+        /******/
+        __webpack_require__.m = modules;
+        /******/
+        /******/ // expose the module cache
+        /******/
+        __webpack_require__.c = installedModules;
+        /******/
+        /******/ // define getter function for harmony exports
+        /******/
+        __webpack_require__.d = function(exports, name, getter) {
+            /******/
+            if (!__webpack_require__.o(exports, name)) {
+                /******/
+                Object.defineProperty(exports, name, { enumerable: true, get: getter });
+                /******/
+            }
+            /******/
+        };
+        /******/
+        /******/ // define __esModule on exports
+        /******/
+        __webpack_require__.r = function(exports) {
+            /******/
+            if (typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+                /******/
+                Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+                /******/
+            }
+            /******/
+            Object.defineProperty(exports, '__esModule', { value: true });
+            /******/
+        };
+        /******/
+        /******/ // create a fake namespace object
+        /******/ // mode & 1: value is a module id, require it
+        /******/ // mode & 2: merge all properties of value into the ns
+        /******/ // mode & 4: return value when already ns object
+        /******/ // mode & 8|1: behave like require
+        /******/
+        __webpack_require__.t = function(value, mode) {
+            /******/
+            if (mode & 1) value = __webpack_require__(value);
+            /******/
+            if (mode & 8) return value;
+            /******/
+            if ((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+            /******/
+            var ns = Object.create(null);
+            /******/
+            __webpack_require__.r(ns);
+            /******/
+            Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+            /******/
+            if (mode & 2 && typeof value != 'string')
+                for (var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+            /******/
+            return ns;
+            /******/
+        };
+        /******/
+        /******/ // getDefaultExport function for compatibility with non-harmony modules
+        /******/
+        __webpack_require__.n = function(module) {
+            /******/
+            var getter = module && module.__esModule ?
+                /******/
+                function getDefault() { return module['default']; } :
+                /******/
+                function getModuleExports() { return module; };
+            /******/
+            __webpack_require__.d(getter, 'a', getter);
+            /******/
+            return getter;
+            /******/
+        };
+        /******/
+        /******/ // Object.prototype.hasOwnProperty.call
+        /******/
+        __webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+        /******/
+        /******/ // __webpack_public_path__
+        /******/
+        __webpack_require__.p = "/_nuxt/";
+        /******/
+        /******/ // uncaught error handler for webpack runtime
+        /******/
+        __webpack_require__.oe = function(err) {
+            /******/
+            process.nextTick(function() {
+                /******/
+                throw err; // catch this error by using import().catch()
+                /******/
+            });
+            /******/
+        };
+        /******/
+        /******/
+        /******/ // Load entry module and return exports
+        /******/
+        return __webpack_require__(__webpack_require__.s = 113);
+        /******/
+    })
+    /************************************************************************/
+    /******/
+    ([
+            /* 0 */
+            /***/
+            (function(module, __webpack_exports__, __webpack_require__) {
 
-      tree.push(vm);
-      vm = vm.$parent;
-    }
+                "use strict";
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "h", function() { return createSimpleFunctional; });
+                /* unused harmony export directiveConfig */
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "a", function() { return addOnceEventListener; });
+                /* unused harmony export passiveSupported */
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "b", function() { return addPassiveEventListener; });
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "l", function() { return getNestedValue; });
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "i", function() { return deepEqual; });
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "m", function() { return getObjectValueByPath; });
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "n", function() { return getPropertyFromItem; });
+                /* unused harmony export createRange */
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "q", function() { return getZIndex; });
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "j", function() { return escapeHTML; });
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "k", function() { return filterObjectOnKeys; });
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "g", function() { return convertToUnit; });
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "r", function() { return kebabCase; });
+                /* unused harmony export isObject */
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "s", function() { return keyCodes; });
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "w", function() { return remapInternalIcon; });
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "t", function() { return keys; });
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "c", function() { return camelize; });
+                /* unused harmony export arrayDiff */
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "x", function() { return upperFirst; });
+                /* unused harmony export groupItems */
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "y", function() { return wrapInArray; });
+                /* unused harmony export sortItems */
+                /* unused harmony export defaultFilter */
+                /* unused harmony export searchItems */
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "p", function() { return getSlotType; });
+                /* unused harmony export debounce */
+                /* unused harmony export throttle */
+                /* unused harmony export getPrefixedScopedSlots */
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "o", function() { return getSlot; });
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "e", function() { return clamp; });
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "v", function() { return padEnd; });
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "d", function() { return chunk; });
+                /* unused harmony export humanReadableFileSize */
+                /* unused harmony export camelizeObjectKeys */
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "u", function() { return mergeDeep; });
+                /* unused harmony export fillArray */
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "f", function() { return composedPath; });
+                /* harmony import */
+                var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+                /* harmony import */
+                var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/ __webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 
-    return '\n\nfound in\n\n' + tree.map((vm, i) => `${i === 0 ? '---> ' : ' '.repeat(5 + i * 2)}${Array.isArray(vm) ? `${formatComponentName(vm[0])}... (${vm[1]} recursive calls)` : formatComponentName(vm)}`).join('\n');
+                function createSimpleFunctional(c, el = 'div', name) {
+                    return vue__WEBPACK_IMPORTED_MODULE_0___default.a.extend({
+                        name: name || c.replace(/__/g, '-'),
+                        functional: true,
+                        props: {
+                            tag: {
+                                type: String,
+                                default: el
+                            }
+                        },
+
+                        render(h, {
+                            data,
+                            props,
+                            children
+                        }) {
+                            data.staticClass = `${c} ${data.staticClass || ''}`.trim();
+                            return h(props.tag, data, children);
+                        }
+
+                    });
+                }
+
+                function directiveConfig(binding, defaults = {}) {
+                    return {...defaults,
+                        ...binding.modifiers,
+                        value: binding.arg,
+                        ...(binding.value || {})
+                    };
+                }
+
+                function addOnceEventListener(el, eventName, cb, options = false) {
+                    const once = event => {
+                        cb(event);
+                        el.removeEventListener(eventName, once, options);
+                    };
+
+                    el.addEventListener(eventName, once, options);
+                }
+                let passiveSupported = false;
+
+                try {
+                    if (typeof window !== 'undefined') {
+                        const testListenerOpts = Object.defineProperty({}, 'passive', {
+                            get: () => {
+                                passiveSupported = true;
+                            }
+                        });
+                        window.addEventListener('testListener', testListenerOpts, testListenerOpts);
+                        window.removeEventListener('testListener', testListenerOpts, testListenerOpts);
+                    }
+                } catch (e) {
+                    console.warn(e);
+                }
+                /* eslint-disable-line no-console */
+
+
+
+                function addPassiveEventListener(el, event, cb, options) {
+                    el.addEventListener(event, cb, passiveSupported ? options : false);
+                }
+
+                function getNestedValue(obj, path, fallback) {
+                    const last = path.length - 1;
+                    if (last < 0) return obj === undefined ? fallback : obj;
+
+                    for (let i = 0; i < last; i++) {
+                        if (obj == null) {
+                            return fallback;
+                        }
+
+                        obj = obj[path[i]];
+                    }
+
+                    if (obj == null) return fallback;
+                    return obj[path[last]] === undefined ? fallback : obj[path[last]];
+                }
+
+                function deepEqual(a, b) {
+                    if (a === b) return true;
+
+                    if (a instanceof Date && b instanceof Date && a.getTime() !== b.getTime()) {
+                        // If the values are Date, compare them as timestamps
+                        return false;
+                    }
+
+                    if (a !== Object(a) || b !== Object(b)) {
+                        // If the values aren't objects, they were already checked for equality
+                        return false;
+                    }
+
+                    const props = Object.keys(a);
+
+                    if (props.length !== Object.keys(b).length) {
+                        // Different number of props, don't bother to check
+                        return false;
+                    }
+
+                    return props.every(p => deepEqual(a[p], b[p]));
+                }
+
+                function getObjectValueByPath(obj, path, fallback) {
+                    // credit: http://stackoverflow.com/questions/6491463/accessing-nested-javascript-objects-with-string-key#comment55278413_6491621
+                    if (obj == null || !path || typeof path !== 'string') return fallback;
+                    if (obj[path] !== undefined) return obj[path];
+                    path = path.replace(/\[(\w+)\]/g, '.$1'); // convert indexes to properties
+
+                    path = path.replace(/^\./, ''); // strip a leading dot
+
+                    return getNestedValue(obj, path.split('.'), fallback);
+                }
+
+                function getPropertyFromItem(item, property, fallback) {
+                    if (property == null) return item === undefined ? fallback : item;
+                    if (item !== Object(item)) return fallback === undefined ? item : fallback;
+                    if (typeof property === 'string') return getObjectValueByPath(item, property, fallback);
+                    if (Array.isArray(property)) return getNestedValue(item, property, fallback);
+                    if (typeof property !== 'function') return fallback;
+                    const value = property(item, fallback);
+                    return typeof value === 'undefined' ? fallback : value;
+                }
+
+                function createRange(length) {
+                    return Array.from({
+                        length
+                    }, (v, k) => k);
+                }
+
+                function getZIndex(el) {
+                    if (!el || el.nodeType !== Node.ELEMENT_NODE) return 0;
+                    const index = +window.getComputedStyle(el).getPropertyValue('z-index');
+                    if (!index) return getZIndex(el.parentNode);
+                    return index;
+                }
+                const tagsToReplace = {
+                    '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;'
+                };
+
+                function escapeHTML(str) {
+                    return str.replace(/[&<>]/g, tag => tagsToReplace[tag] || tag);
+                }
+
+                function filterObjectOnKeys(obj, keys) {
+                    const filtered = {};
+
+                    for (let i = 0; i < keys.length; i++) {
+                        const key = keys[i];
+
+                        if (typeof obj[key] !== 'undefined') {
+                            filtered[key] = obj[key];
+                        }
+                    }
+
+                    return filtered;
+                }
+
+                function convertToUnit(str, unit = 'px') {
+                    if (str == null || str === '') {
+                        return undefined;
+                    } else if (isNaN(+str)) {
+                        return String(str);
+                    } else {
+                        return `${Number(str)}${unit}`;
+                    }
+                }
+
+                function kebabCase(str) {
+                    return (str || '').replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+                }
+
+                function isObject(obj) {
+                    return obj !== null && typeof obj === 'object';
+                } // KeyboardEvent.keyCode aliases
+
+                const keyCodes = Object.freeze({
+                    enter: 13,
+                    tab: 9,
+                    delete: 46,
+                    esc: 27,
+                    space: 32,
+                    up: 38,
+                    down: 40,
+                    left: 37,
+                    right: 39,
+                    end: 35,
+                    home: 36,
+                    del: 46,
+                    backspace: 8,
+                    insert: 45,
+                    pageup: 33,
+                    pagedown: 34,
+                    shift: 16
+                });
+                /**
+                 * This remaps internal names like '$cancel' or '$vuetify.icons.cancel'
+                 * to the current name or component for that icon.
+                 */
+
+                function remapInternalIcon(vm, iconName) {
+                    // Look for custom component in the configuration
+                    const component = vm.$vuetify.icons.component; // Look for overrides
+
+                    if (iconName.startsWith('$')) {
+                        // Get the target icon name
+                        const iconPath = `$vuetify.icons.values.${iconName.split('$').pop().split('.').pop()}`; // Now look up icon indirection name,
+                        // e.g. '$vuetify.icons.values.cancel'
+
+                        const override = getObjectValueByPath(vm, iconPath, iconName);
+                        if (typeof override === 'string') iconName = override;
+                        else return override;
+                    }
+
+                    if (component == null) {
+                        return iconName;
+                    }
+
+                    return {
+                        component,
+                        props: {
+                            icon: iconName
+                        }
+                    };
+                }
+
+                function keys(o) {
+                    return Object.keys(o);
+                }
+                /**
+                 * Camelize a hyphen-delimited string.
+                 */
+
+                const camelizeRE = /-(\w)/g;
+                const camelize = str => {
+                    return str.replace(camelizeRE, (_, c) => c ? c.toUpperCase() : '');
+                };
+                /**
+                 * Returns the set difference of B and A, i.e. the set of elements in B but not in A
+                 */
+
+                function arrayDiff(a, b) {
+                    const diff = [];
+
+                    for (let i = 0; i < b.length; i++) {
+                        if (a.indexOf(b[i]) < 0) diff.push(b[i]);
+                    }
+
+                    return diff;
+                }
+                /**
+                 * Makes the first character of a string uppercase
+                 */
+
+                function upperFirst(str) {
+                    return str.charAt(0).toUpperCase() + str.slice(1);
+                }
+
+                function groupItems(items, groupBy, groupDesc) {
+                    const key = groupBy[0];
+                    const groups = [];
+                    let current;
+
+                    for (let i = 0; i < items.length; i++) {
+                        const item = items[i];
+                        const val = getObjectValueByPath(item, key, null);
+
+                        if (current !== val) {
+                            current = val;
+                            groups.push({
+                                name: val != null ? val : '',
+                                items: []
+                            });
+                        }
+
+                        groups[groups.length - 1].items.push(item);
+                    }
+
+                    return groups;
+                }
+
+                function wrapInArray(v) {
+                    return v != null ? Array.isArray(v) ? v : [v] : [];
+                }
+
+                function sortItems(items, sortBy, sortDesc, locale, customSorters) {
+                    if (sortBy === null || !sortBy.length) return items;
+                    const stringCollator = new Intl.Collator(locale, {
+                        sensitivity: 'accent',
+                        usage: 'sort'
+                    });
+                    return items.sort((a, b) => {
+                        for (let i = 0; i < sortBy.length; i++) {
+                            const sortKey = sortBy[i];
+                            let sortA = getObjectValueByPath(a, sortKey);
+                            let sortB = getObjectValueByPath(b, sortKey);
+
+                            if (sortDesc[i]) {
+                                [sortA, sortB] = [sortB, sortA];
+                            }
+
+                            if (customSorters && customSorters[sortKey]) {
+                                const customResult = customSorters[sortKey](sortA, sortB);
+                                if (!customResult) continue;
+                                return customResult;
+                            } // Check if both cannot be evaluated
+
+
+                            if (sortA === null && sortB === null) {
+                                continue;
+                            } // Dates should be compared numerically
+
+
+                            if (sortA instanceof Date && sortB instanceof Date) {
+                                return sortA.getTime() - sortB.getTime();
+                            }
+
+                            [sortA, sortB] = [sortA, sortB].map(s => (s || '').toString().toLocaleLowerCase());
+
+                            if (sortA !== sortB) {
+                                if (!isNaN(sortA) && !isNaN(sortB)) return Number(sortA) - Number(sortB);
+                                return stringCollator.compare(sortA, sortB);
+                            }
+                        }
+
+                        return 0;
+                    });
+                }
+
+                function defaultFilter(value, search, item) {
+                    return value != null && search != null && typeof value !== 'boolean' && value.toString().toLocaleLowerCase().indexOf(search.toLocaleLowerCase()) !== -1;
+                }
+
+                function searchItems(items, search) {
+                    if (!search) return items;
+                    search = search.toString().toLowerCase();
+                    if (search.trim() === '') return items;
+                    return items.filter(item => Object.keys(item).some(key => defaultFilter(getObjectValueByPath(item, key), search, item)));
+                }
+                /**
+                 * Returns:
+                 *  - 'normal' for old style slots - `<template slot="default">`
+                 *  - 'scoped' for old style scoped slots (`<template slot="default" slot-scope="data">`) or bound v-slot (`#default="data"`)
+                 *  - 'v-slot' for unbound v-slot (`#default`) - only if the third param is true, otherwise counts as scoped
+                 */
+
+                function getSlotType(vm, name, split) {
+                    if (vm.$slots.hasOwnProperty(name) && vm.$scopedSlots.hasOwnProperty(name) && vm.$scopedSlots[name].name) {
+                        return split ? 'v-slot' : 'scoped';
+                    }
+
+                    if (vm.$slots.hasOwnProperty(name)) return 'normal';
+                    if (vm.$scopedSlots.hasOwnProperty(name)) return 'scoped';
+                }
+
+                function debounce(fn, delay) {
+                    let timeoutId = 0;
+                    return (...args) => {
+                        clearTimeout(timeoutId);
+                        timeoutId = setTimeout(() => fn(...args), delay);
+                    };
+                }
+
+                function throttle(fn, limit) {
+                    let throttling = false;
+                    return (...args) => {
+                        if (!throttling) {
+                            throttling = true;
+                            setTimeout(() => throttling = false, limit);
+                            return fn(...args);
+                        }
+                    };
+                }
+
+                function getPrefixedScopedSlots(prefix, scopedSlots) {
+                    return Object.keys(scopedSlots).filter(k => k.startsWith(prefix)).reduce((obj, k) => {
+                        obj[k.replace(prefix, '')] = scopedSlots[k];
+                        return obj;
+                    }, {});
+                }
+
+                function getSlot(vm, name = 'default', data, optional = false) {
+                    if (vm.$scopedSlots.hasOwnProperty(name)) {
+                        return vm.$scopedSlots[name](data instanceof Function ? data() : data);
+                    } else if (vm.$slots.hasOwnProperty(name) && (!data || optional)) {
+                        return vm.$slots[name];
+                    }
+
+                    return undefined;
+                }
+
+                function clamp(value, min = 0, max = 1) {
+                    return Math.max(min, Math.min(max, value));
+                }
+
+                function padEnd(str, length, char = '0') {
+                    return str + char.repeat(Math.max(0, length - str.length));
+                }
+
+                function chunk(str, size = 1) {
+                    const chunked = [];
+                    let index = 0;
+
+                    while (index < str.length) {
+                        chunked.push(str.substr(index, size));
+                        index += size;
+                    }
+
+                    return chunked;
+                }
+
+                function humanReadableFileSize(bytes, binary = false) {
+                    const base = binary ? 1024 : 1000;
+
+                    if (bytes < base) {
+                        return `${bytes} B`;
+                    }
+
+                    const prefix = binary ? ['Ki', 'Mi', 'Gi'] : ['k', 'M', 'G'];
+                    let unit = -1;
+
+                    while (Math.abs(bytes) >= base && unit < prefix.length - 1) {
+                        bytes /= base;
+                        ++unit;
+                    }
+
+                    return `${bytes.toFixed(1)} ${prefix[unit]}B`;
+                }
+
+                function camelizeObjectKeys(obj) {
+                    if (!obj) return {};
+                    return Object.keys(obj).reduce((o, key) => {
+                        o[camelize(key)] = obj[key];
+                        return o;
+                    }, {});
+                }
+
+                function mergeDeep(source = {}, target = {}) {
+                    for (const key in target) {
+                        const sourceProperty = source[key];
+                        const targetProperty = target[key]; // Only continue deep merging if
+                        // both properties are objects
+
+                        if (isObject(sourceProperty) && isObject(targetProperty)) {
+                            source[key] = mergeDeep(sourceProperty, targetProperty);
+                            continue;
+                        }
+
+                        source[key] = targetProperty;
+                    }
+
+                    return source;
+                }
+
+                function fillArray(length, obj) {
+                    return Array(length).fill(obj);
+                }
+                /**  Polyfill for Event.prototype.composedPath */
+
+                function composedPath(e) {
+                    if (e.composedPath) return e.composedPath();
+                    const path = [];
+                    let el = e.target;
+
+                    while (el) {
+                        path.push(el);
+
+                        if (el.tagName === 'HTML') {
+                            path.push(document);
+                            path.push(window);
+                            return path;
+                        }
+
+                        el = el.parentElement;
+                    }
+
+                    return path;
+                }
+
+                /***/
+            }),
+            /* 1 */
+            /***/
+            (function(module, exports) {
+
+                module.exports = require("vue");
+
+                /***/
+            }),
+            /* 2 */
+            /***/
+            (function(module, __webpack_exports__, __webpack_require__) {
+
+                "use strict";
+
+                // EXPORTS
+                __webpack_require__.d(__webpack_exports__, "a", function() { return /* binding */ Constants; });
+                __webpack_require__.d(__webpack_exports__, "c", function() { return /* binding */ nuxtOptions; });
+                __webpack_require__.d(__webpack_exports__, "d", function() { return /* binding */ options; });
+                __webpack_require__.d(__webpack_exports__, "b", function() { return /* binding */ localeMessages; });
+
+                // CONCATENATED MODULE: ./static/lang/id-Es.js
+                /* harmony default export */
+                var id_Es = (() => {
+                    return new Promise(function(resolve) {
+                        resolve({
+                            common: {
+                                "title": "Un simple Ejemplo",
+                                "subtitle": "It's a blank-page. Start to build your'e page from here.",
+                                "error_with_status": "An error occurred on server",
+                                "404": "La página que buscas no existe.",
+                                "404_subtitle": "Puedes volver al inicio y buscar lo que necesitas!.",
+                                "back": "Regresa a casa",
+                                "error_without_status": "An error occurred on the server",
+                                "contact_title": "Free Project Quote",
+                                "contact_title2": "Say Hello to Us",
+                                "contact_subtitle": "Do you have any questions? Are you ready to reduce cost and create new revenue? Or you simply want to say hi? Drop us a message.",
+                                "form_name": "Cual es tu nombre? *",
+                                "form_email": "Cual es tu email? *",
+                                "form_phone": "Deja tu número de telefono?",
+                                "form_company": "Nombre empresa?",
+                                "form_message": "Escribe tu mensaje aquí",
+                                "form_terms": "I have read and accept the Terms of",
+                                "form_privacy": "Service & Privacy Policy *",
+                                "form_send": "Enviar Mensaje",
+                                "login": "login",
+                                "login_create": "Nueva cuenta",
+                                "login_or": "O conectate con tu email",
+                                "login_email": "Email",
+                                "login_password": "Password",
+                                "login_remember": "Recuerdame",
+                                "login_forgot": "Forgot Password",
+                                "continue": "Continuar",
+                                "login_title": "Bienvenido de vuelta",
+                                "login_subtitle": "Conectate para continuar",
+                                "register": "Registrarse",
+                                "register_already": "Tienes cuenta?",
+                                "register_or": "registrate con tu email",
+                                "register_name": "Nombre? *",
+                                "register_email": "Email? *",
+                                "register_password": "Password",
+                                "register_confirm": "Confirmar Password",
+                                "register_title": "Unete a esta gran comunidad",
+                                "register_subtitle": "Registro gratuito",
+                                "accept": "Aceptar",
+                                "en": "English",
+                                "de": "Deutsch",
+                                "zh": "简体中文",
+                                "pt": "󠁥󠁮󠁧󠁿Português",
+                                "Es": "󠁥󠁮󠁧󠁿Español",
+                                "ar": "󠁥󠁮󠁧󠁿العربيّة",
+                                "notif_msg": "Bienvenidos a Msbyte, toda tu información es manejada de manera confidencial según las normas internacionales."
+                            },
+                            saasLanding: {
+                                "header_login": "Login",
+                                "header_register": "Registrarse",
+                                "header_language": "lenguaje",
+                                "header_theme": "Theme mode",
+                                "header_dark": "dark",
+                                "header_light": "light",
+                                "header_feature": "Msbyte",
+                                "header_testimonials": "Proyectos",
+                                "header_pricing": "Planes",
+                                "header_faq": "Conocenos",
+                                "header_contact": "contacto",
+                                "banner_title": "Innovación y tecnología",
+                                "banner_titlestrong": "Desarrollo Web",
+                                "banner_subtitle": "Unete a la comunidad de usuarios de Msbyte, soluciones para emprendedores y empresas.",
+                                "banner_watchvideo": "Ver Video",
+                                "getstarted": "Comencemos",
+                                "counter_month": "Años",
+                                "counter_free": "Experiencia",
+                                "counter_users": "Clientes",
+                                "counter_providers": "Proyectos",
+                                "feature_title1": "Todo lo que necesitas",
+                                "feature_titlestrong1": "en tu página web",
+                                "feature_desc1": "Nos encargamos de crear tu página web desde cero, ayudandote a crear tu propia marca en este mundo digital.",
+                                "see_detail": "Conocer más",
+                                "feature_title2": "Everything you need is a",
+                                "feature_titlestrong2": "para tu negocio",
+                                "feature_desc2": "Diseño web, posicionamiento, E-commerce, chat web, whatsapp y mucho más en un solo lugar.",
+                                "feature_title3": "Aceleramos tu proyecto",
+                                "feature_titlestrong3": "en Internet",
+                                "feature_desc3": "Te ayudamos a desarrollar eso que buscas, una nueva imagen en la web, un emprendimiento que llegue a todo el mundo.",
+                                "testi_title": "Clientes",
+                                "testi_titlestrong": "Proyectos",
+                                "pricing_title": "Planes y Precios",
+                                "pricing_subtitle": "Ofrecemos nuestros mejores planes con Hosting Incluido Gratis por 1 año!.",
+                                "faq_subtitle": "Tienes alguna pregunta sobre nuestros servicios? Quieres que te contactemos? Somos Msbyte!",
+                                "caption_news": "nuevos",
+                                "caption_event": "eventos",
+                                "news_readmore": "Ver más",
+                                "footer_waiting": "Que esperas por tener tu propia página web?"
+                            }
+                        });
+                    });
+                });
+                // CONCATENATED MODULE: ./.nuxt/nuxt-i18n/options.js
+
+                const Constants = {
+                    COMPONENT_OPTIONS_KEY: "nuxtI18n",
+                    STRATEGIES: {
+                        "PREFIX": "prefix",
+                        "PREFIX_EXCEPT_DEFAULT": "prefix_except_default",
+                        "PREFIX_AND_DEFAULT": "prefix_and_default",
+                        "NO_PREFIX": "no_prefix"
+                    },
+                    REDIRECT_ON_OPTIONS: {
+                        "ALL": "all",
+                        "ROOT": "root",
+                        "NO_PREFIX": "no prefix"
+                    }
+                };
+                const nuxtOptions = {
+                    isUniversalMode: true,
+                    trailingSlash: undefined
+                };
+                const options = {
+                    vueI18n: {
+                        "fallbackLocale": "Es"
+                    },
+                    vueI18nLoader: false,
+                    locales: [{
+                        "code": "Es",
+                        "iso": "eS-Es",
+                        "name": "Español",
+                        "file": "id-Es.js",
+                        "dir": "ltr"
+                    }, {
+                        "code": "en",
+                        "iso": "en-US",
+                        "name": "English",
+                        "file": "en-US.js",
+                        "dir": "ltr"
+                    }],
+                    defaultLocale: "Es",
+                    defaultDirection: "ltr",
+                    routesNameSeparator: "___",
+                    defaultLocaleRouteNameSuffix: "default",
+                    sortRoutes: true,
+                    strategy: "prefix_except_default",
+                    lazy: true,
+                    langDir: "C:\\Users\\Francisco\\Desktop\\VUE\\veluxi\\veluxi_v217\\veluxi\\packages\\saas-theme\\static\\lang",
+                    rootRedirect: null,
+                    detectBrowserLanguage: {
+                        "alwaysRedirect": true,
+                        "cookieCrossOrigin": false,
+                        "cookieDomain": null,
+                        "cookieKey": "i18n_redirected",
+                        "cookieSecure": false,
+                        "fallbackLocale": "",
+                        "redirectOn": "root",
+                        "useCookie": true
+                    },
+                    differentDomains: false,
+                    baseUrl: "",
+                    vuex: {
+                        "moduleName": "i18n",
+                        "syncRouteParams": true
+                    },
+                    parsePages: true,
+                    pages: {},
+                    skipSettingLocaleOnNavigate: false,
+                    onBeforeLanguageSwitch: () => {},
+                    onLanguageSwitched: () => null,
+                    seo: false,
+                    normalizedLocales: [{
+                        "code": "Es",
+                        "iso": "eS-Es",
+                        "name": "Español",
+                        "file": "id-Es.js",
+                        "dir": "ltr"
+                    }, {
+                        "code": "en",
+                        "iso": "en-US",
+                        "name": "English",
+                        "file": "en-US.js",
+                        "dir": "ltr"
+                    }],
+                    localeCodes: ["Es", "en"],
+                    additionalMessages: []
+                };
+                const localeMessages = {
+                    'id-Es.js': () => Promise.resolve(id_Es),
+                    'en-US.js': () => __webpack_require__.e( /* import() | lang-en-US.js */ 1).then(__webpack_require__.bind(null, 352))
+                };
+
+                /***/
+            }),
+            /* 3 */
+            /***/
+            (function(module, __webpack_exports__, __webpack_require__) {
+
+                "use strict";
+                /* harmony export (binding) */
+                __webpack_require__.d(__webpack_exports__, "a", function() { return mixins; });
+                /* harmony import */
+                var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+                /* harmony import */
+                var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/ __webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
+                /* eslint-disable max-len, import/export, no-use-before-define */
+
+                function mixins(...args) {
+                    return vue__WEBPACK_IMPORTED_MODULE_0___default.a.extend({
+                        mixins: args
+                    });
+                }
+
+                /***/
+            }),
+            /* 4 */
+            /***/
+            (function(module, __webpack_exports__, __webpack_require__) {
+
+                    "use strict";
+                    /* unused harmony export consoleInfo */
+                    /* harmony export (binding) */
+                    __webpack_require__.d(__webpack_exports__, "c", function() { return consoleWarn; });
+                    /* harmony export (binding) */
+                    __webpack_require__.d(__webpack_exports__, "b", function() { return consoleError; });
+                    /* harmony export (binding) */
+                    __webpack_require__.d(__webpack_exports__, "d", function() { return deprecate; });
+                    /* harmony export (binding) */
+                    __webpack_require__.d(__webpack_exports__, "a", function() { return breaking; });
+                    /* harmony export (binding) */
+                    __webpack_require__.d(__webpack_exports__, "e", function() { return removed; });
+                    /* harmony import */
+                    var _framework__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(51);
+                    /* eslint-disable no-console */
+
+
+                    function createMessage(message, vm, parent) {
+                        if (_framework__WEBPACK_IMPORTED_MODULE_0__[ /* default */ "a"].config.silent) return;
+
+                        if (parent) {
+                            vm = {
+                                _isVue: true,
+                                $parent: parent,
+                                $options: vm
+                            };
+                        }
+
+                        if (vm) {
+                            // Only show each message once per instance
+                            vm.$_alreadyWarned = vm.$_alreadyWarned || [];
+                            if (vm.$_alreadyWarned.includes(message)) return;
+                            vm.$_alreadyWarned.push(message);
+                        }
+
+                        return `[Vuetify] ${message}` + (vm ? generateComponentTrace(vm) : '');
+                    }
+
+                    function consoleInfo(message, vm, parent) {
+                        const newMessage = createMessage(message, vm, parent);
+                        newMessage != null && console.info(newMessage);
+                    }
+
+                    function consoleWarn(message, vm, parent) {
+                        const newMessage = createMessage(message, vm, parent);
+                        newMessage != null && console.warn(newMessage);
+                    }
+
+                    function consoleError(message, vm, parent) {
+                        const newMessage = createMessage(message, vm, parent);
+                        newMessage != null && console.error(newMessage);
+                    }
+
+                    function deprecate(original, replacement, vm, parent) {
+                        consoleWarn(`[UPGRADE] '${original}' is deprecated, use '${replacement}' instead.`, vm, parent);
+                    }
+
+                    function breaking(original, replacement, vm, parent) {
+                        consoleError(`[BREAKING] '${original}' has been removed, use '${replacement}' instead. For more information, see the upgrade guide https://github.com/vuetifyjs/vuetify/releases/tag/v2.0.0#user-content-upgrade-guide`, vm, parent);
+                    }
+
+                    function removed(original, vm, parent) {
+                        consoleWarn(`[REMOVED] '${original}' has been removed. You can safely omit it.`, vm, parent);
+                    }
+                    /**
+                     * Shamelessly stolen from vuejs/vue/blob/dev/src/core/util/debug.js
+                     */
+
+                    const classifyRE = /(?:^|[-_])(\w)/g;
+
+                    const classify = str => str.replace(classifyRE, c => c.toUpperCase()).replace(/[-_]/g, '');
+
+                    function formatComponentName(vm, includeFile) {
+                        if (vm.$root === vm) {
+                            return '<Root>';
+                        }
+
+                        const options = typeof vm === 'function' && vm.cid != null ? vm.options : vm._isVue ? vm.$options || vm.constructor.options : vm || {};
+                        let name = options.name || options._componentTag;
+                        const file = options.__file;
+
+                        if (!name && file) {
+                            const match = file.match(/([^/\\]+)\.vue$/);
+                            name = match && match[1];
+                        }
+
+                        return (name ? `<${classify(name)}>` : `<Anonymous>`) + (file && includeFile !== false ? ` at ${file}` : '');
+                    }
+
+                    function generateComponentTrace(vm) {
+                        if (vm._isVue && vm.$parent) {
+                            const tree = [];
+                            let currentRecursiveSequence = 0;
+
+                            while (vm) {
+                                if (tree.length > 0) {
+                                    const last = tree[tree.length - 1];
+
+                                    if (last.constructor === vm.constructor) {
+                                        currentRecursiveSequence++;
+                                        vm = vm.$parent;
+                                        continue;
+                                    } else if (currentRecursiveSequence > 0) {
+                                        tree[tree.length - 1] = [last, currentRecursiveSequence];
+                                        currentRecursiveSequence = 0;
+                                    }
+                                }
+
+                                tree.push(vm);
+                                vm = vm.$parent;
+                            }
+
+                            return '\n\nfound in\n\n' + tree.map((vm, i) => `${i === 0 ? '---> ' : ' '.repeat(5 + i * 2)}${Array.isArray(vm) ? `${formatComponentName(vm[0])}... (${vm[1]} recursive calls)` : formatComponentName(vm)}`).join('\n');
   } else {
     return `\n\n(found in ${formatComponentName(vm)})`;
   }

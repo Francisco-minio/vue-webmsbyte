@@ -118,35 +118,36 @@ const theme = {
 const testiData = [
   {
     text:
-      'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.',
+      'Trabajamos desde un prinicipio con Msbyte, implementando más que solo una web trayendo nuevos clientes a nuestra empresa y generando un flujo nuevo de trabajo.',
     avatar: imgAPI.avatar[10],
-    name: 'John Doe',
-    title: 'Chief Digital Officer',
-    logo: '/images/logos/agency.png'
+    name: 'Miguel Cardenas',
+    title: 'Security Smart Chile',
+    logo: '/images/logos/ssc-logo.png'
   },
   {
     text:
-      'Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper aliquet ultrices. Aenean facilisis vitae purus facilisis semper. Nam vitae scelerisque lorem, quis tempus libero.',
+      'Responsable y con muchas ideas para crear nuestra web de cervezas en la ciudad de Valdivia.',
     avatar: imgAPI.avatar[1],
-    name: 'Jean Doe',
-    title: 'Chief Digital Officer',
-    logo: '/images/logos/architect.png'
+    name: 'Miguel Vera',
+    title: 'Cerveza Humedales',
+    logo: '/images/logos/humedales-logo.png'
   },
   {
     text:
-      'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
+      'Francisco trabajando para nuestro colegio desarrollo una plataforma donde los apoderados y alumnos pudieron durante la pandemia informarse de manera formal de todas nuestras actividades..',
     avatar: imgAPI.avatar[2],
-    name: 'Jena Doe',
-    title: 'Graphic Designer',
-    logo: '/images/logos/cloud.png'
+    name: 'Director',
+    title: 'Colegio Ejército de Salvación',
+    logo: '/images/logos/ces-logo.png'
   },
   {
-    text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
+    text: 'Estamos actualmente trabajando junto a Msbyte para poder desarrollar nuetra web e-commerce para nuestra empresa.',
     avatar: imgAPI.avatar[3],
-    name: 'Jovelin Doe',
-    title: 'Senior Graphic Designer',
-    logo: '/images/logos/starter.png'
+    name: 'Promek Chile',
+    title: 'Gerente',
+    logo: '/images/logos/promek.png'
   },
+  /*
   {
     text:
       'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
@@ -187,6 +188,8 @@ const testiData = [
     title: 'Chief Digital Officer',
     logo: '/images/logos/saas.png'
   }
+
+  */
 ]
 
 export default {
